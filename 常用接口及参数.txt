@@ -1,0 +1,118 @@
+1.视频会议邀请
+url：http://172.19.2.106:8080/oncon-httpserver/apis/videoConference/invite/v1.0
+http://10.170.10.8:9108/apis/videoConference/invite/v1.0
+http://172.18.48.138:9108/apis/videoConference/invite/v1.0
+
+参数:{"version":"1.0","id":"12345","type":"put_videomeeting_mng","action":"request","callermobile":"18649315360","calledmobile":"18649315360","conferencename";"1010","appid":"com.rxth","entercode":"10000"}
+
+2.同事圈发布动态
+普通：
+URL：https://jk.teamshub.com/oncon-service/app_credential/put_user_blog/v2.0?access_token=B0q9Mon934TYmffcw9b1FFEJv3E7D3JS&issecurity=true
+传参：{"phone":"13264536228","source":"iphone","content":"test_000","companylist":"[\"10000\"]","authorityBlog":"1","version":"2.0","streams":"[\"group1\\\/M00\\\/69\\\/6C\\\/CqoKelitIUaTdrq9AAhxjryo1B0172.jpg\",\"group1\\\/M00\\\/69\\\/6C\\\/CqoKelitIVLUk7KXADADxFdUvqc528.jpg\"]"}
+
+活动：
+URL：
+传参：
+{
+    "id": "3242",
+    "version": "1.0",
+    "type": "put_user_blog",
+    "source": "iphone",
+    "phone": "18835501235",
+    "title": "wo shi ceshi",
+    "content": "hahahah",
+    "streams": "[\"group1/M00/6A/10/CqoKeljeFYzg9JCgAAJKOKR3GS8515.jpg\"]",
+    "resType": "activity",
+    "authorityBlog": "0",
+    "companyList": "[\"9811000000744912\"]",
+    "location": "{\"longitude\":\"123\",\"latitude\":\"4321\",\"locationContent\":\"beijing\",\"locationImg\":\"group1\\/M00\\/69\\/6C\\/CqoKelitIUaTdrq9AAhxjryo1B0172.jpg\"}",
+    "startTime": "2014-01-09 12: 06: 08",
+    "endTime": "2014-01-09 12: 06: 08",
+    "tag": "1"
+}
+
+3.抽奖系统查询已中奖人
+URL：http://localhost:8080/ajax/competLottery/findAppointLotteryUser
+
+4.抽奖系统存储抽奖人
+URL：http://localhost:8080/ajax/competLottery/lottery?977
+
+5.抽奖系统删除抽奖人
+URL：http://localhost:8080/ajax/competLottery/del/583f7debe4b0745494166e89
+
+6.抽奖系统查询抽奖池
+URL：/ajax/competLottery/findUser/list
+
+
+http://localhost:8080/ajax/competLottery/findLotteryUser/list/3-20-1
+
+
+7.同事圈查询动态
+http://cug-app.chinaunicomglobal.com/myyuleapi/feed/list4followerByPhone.json?phone=13510529732&source=window&version=2.0.0&pageNo=1&pageSize=1&publicKey=&sign=&readTime=&isSign=true&appId=mobile
+
+
+URL=http://192.168.50.65:9264/myyuleapi/user/bindEmail.json|||{"publicKey":"yixin0d60573793509","isSign":"true","source":"yixin","nickName":"%E7%8E%8B%E5%AD%90%E4%BC%A6","email":"","pass":"{MD5}4r/fZDw3OOeiUNKtz7xtdg==","version":"2.0.0","mobile":"15069055533"}
+
+8.同步用户
+http://192.168.50.65:9264/myyuleapi/user/bindEmail.json?source=yixin&nickName=weijun&pass={MD5}mf4l9gEkywDw3tSo8HnRqQ==&version=2.0&mobile=13603070419
+
+9.查询活动列表
+url：
+http://jk.teamshub.com/oncon-service/sys_credential/get_user_blog/v2.0?access_token=debug-token-oncon-server
+http://172.19.2.26:8080/feed/getBlog/v2.json
+传参：{"readTime":"1492612525000","source":"iphone","type":"get_user_blog","action":"request","pageSize":"10","version":"2.0","tag":"0","resType":"activity","pageNo":"1","phone":"13810277621","sort":"1","scope":"all","appId":"iMyyule"}
+
+{"readTime":"1492612525000","source":"iphone","type":"get_user_blog","action":"request","pageSize":"10","version":"2.0","tag":"0","resType":"activity","pageNo":"1","phone":"13810277621","sort":"1","scope":"all","appId":"iMyyule"}
+
+
+10、发活动
+{
+    "id": 195005,
+    "action": "request",
+    "source": "android",
+    "version": "3.0",
+    "type": "put_user_blog",
+    "phone": "13810277621",
+    "title": "test",
+    "content": "他吞吞吐吐天天天天他他他一哈个GV个GV尴尬尴尬刚发个",
+    "logo": "group1/M00/08/0D/CqoKe1j5a1mRV1GCAAQceFZDkRs741.jpg",
+    "resType": "activity",
+    "authorityBlog": "0",
+    "companylist": "[\"10000\"]",
+    "locationDetail": {
+        "longitude": "116.313159",
+        "latitude": "39.990195",
+        "locationContent": "北京市海淀区",
+        "locationImg": "group1/M00/08/0D/CqoKe1j5a1-psLSnABGCCETkYfs448.jpg"
+    },
+    "endTime": "1494237600000",
+    "tag": "1"
+}
+{
+    action = request;
+    authorityBlog = 0;
+    content = M;
+    endTime = "2017-04-24 04:00:00";
+    id = 367035;
+    location =     {
+        latitude = "27.730053";
+        locationContent = "中国湖南省娄底市娄星区锑都南路9号";
+        locationImg = "http://media2.myyule.cn/group1/M00/08/1E/CqoKe1j9WYvJ-aroAACbvWzdgXQ712.jpg";
+        longitude = "112.018966";
+    };
+    logo = "http://media2.myyule.cn/group1/M00/08/1E/CqoKe1j9WYq8eYf0AAC37e9K1oU055.jpg";
+    phone = 15116476741;
+    resType = activity;
+    source = iphone;
+    startTime = "2017-04-24 09:48:00";
+    tag = 2;
+    title = hulk;
+    type = "put_user_blog";
+    version = "3.0";
+}
+
+
+{"id":198476,"action":"request","source":"android","version":"3.0","type":"put_user_blog","phone":"13810277621","title":"测试title","content":"content","logo":"group1\/M00\/6A\/48\/CqoKelj1soT6-yy1AAsEX9Dw2Xc541.jpg","resType":"scrip","authorityBlog":"0"}
+
+{"resType":"scrip","type":"put_user_blog","id":"663398","logo":"http:\/\/media2.myyule.cn\/group1\/M00\/08\/1E\/CqoKe1j9WYq8eYf0AAC37e9K1oU055.jpg","content":"M","phone":"15116476741","action":"request","version":"3.0","authorityBlog":"0","source":"iphone","title":"hulk"}
+
